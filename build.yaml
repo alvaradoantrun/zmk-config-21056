@@ -1,0 +1,5 @@
+# Build matrix for your repo. This will create separate artifacts for each side.
+board: ["nice_nano_v2"]
+shield:
+  - mysplit_left
+  - mysplit_right

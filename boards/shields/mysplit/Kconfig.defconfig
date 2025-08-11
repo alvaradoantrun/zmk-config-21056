@@ -1,0 +1,14 @@
+# Defaults applied when building either half
+if SHIELD_MYSPLIT_LEFT || SHIELD_MYSPLIT_RIGHT
+config ZMK_SPLIT
+    default y
+endif
+
+# Central on left half; sets device name and central role
+if SHIELD_MYSPLIT_LEFT
+config ZMK_KEYBOARD_NAME
+    default "MySplit"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+endif

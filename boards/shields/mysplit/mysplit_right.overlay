@@ -1,0 +1,13 @@
+#include "mysplit.dtsi"
+
+&default_transform {
+    // Offset by left half's columns (3) so right half occupies columns 3..5
+    col-offset = <3>;
+};
+
+&kscan0 {
+    // Example columns for RIGHT; tweak pins later
+    col-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>,
+                <&pro_micro 11 GPIO_ACTIVE_HIGH>,
+                <&pro_micro 13 GPIO_ACTIVE_HIGH>;
+};

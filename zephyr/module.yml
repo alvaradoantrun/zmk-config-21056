@@ -1,0 +1,4 @@
+name: zmk-keyboards-mysplit
+build:
+  settings:
+    board_root: .
